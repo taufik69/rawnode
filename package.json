@@ -1,0 +1,15 @@
+{
+  "name": "rawnode",
+  "version": "1.0.0",
+  "description": "This is single purpose node application",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev",
+    "taufik": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
