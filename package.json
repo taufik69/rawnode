@@ -4,12 +4,12 @@
   "description": "This is single purpose node application",
   "main": "index.js",
   "scripts": {
-    "test": "dev",
-    "taufik": "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.22"
   }
 }
