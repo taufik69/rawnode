@@ -24,7 +24,7 @@ handler.managereqres = (req, res) => {
   const headerObject = req.headers;
 
   // make a usable object to stringdecoder
-  const decoder = new StringDecoder("utf-8");
+  // const decoder = new StringDecoder("utf-8");
   let realdata = "";
   /* ---------------------- //*choossing route via conditon ---------------------- */
   const requestedObject = {
@@ -43,15 +43,19 @@ handler.managereqres = (req, res) => {
     res.writeHead(statusCode);
     res.end(payloadString);
   });
-  req.on("data", (buffer) => {
-    realdata += decoder.write(buffer);
-  });
 
-  req.on("end", () => {
-    realdata += decoder.end();
-    console.log("real data is :", realdata);
-    res.end("work perfctly");
-  });
+  /*
+       req.on("data", (buffer) => {
+      realdata += decoder.write(buffer);
+    });
+
+    req.on("end", () => {
+      realdata += decoder.end();
+      console.log("real data is :", realdata);
+      res.end("work perfctly");
+    });
+   
+   */
 };
 
 module.exports = handler;

@@ -1,5 +1,4 @@
 const http = require("http");
-const url = require("url");
 const { managereqres } = require("./helpers/regres");
 
 // create a module scaffhoding to yor project . that object are maintain the all functionality
